@@ -1,0 +1,10 @@
+@media (min-width: 990px) {
+    .page__header {
+        position: fixed;
+    	top: 0;
+    	left: 20%;
+    	right: 0;
+    }
+
+    .page__col:last-child { padding-top: 72px; }
+}

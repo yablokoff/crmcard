@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CMRcard</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="./css/jquery.jscrollpane.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/media.css" />
+
+	<script src="./js/jquery-2-1-0.min.js"></script>
+	<script src="./js/jquery.jscrollpane.min.js"></script>
+	<script src="./js/jquery.mousewheel.js"></script>
+	<script src="./js/main.js"></script>
+
+</head>
+<body>
+	<div class="page">
+		<div class="page__col">
+			<a href="#" class="page__logo"><img src="./i/logo.png" alt="" /></a>
+			<dl class="menu-left">
+				<dt>ОПЕРАЦИИ</dt>
+				<dd>
+					<ul class="menu-left__list">
+						<li class="active"><a href="#">Продажи</a></li>
+						<li><a href="#">Официанты</a></li>
+						<li><a href="#">Меню</a></li>
+						<li><a href="#">Клиенты</a></li>
+					</ul>
+				</dd>
+				<dt>Маркетинг</dt>
+				<dd>
+					<ul class="menu-left__list">
+						<li><a href="#">Кампании</a></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div class="page__col">
+			<!---->
+			<div class="page__header">
+				<div class="menu-top">
+					<ul class="menu-top__list">
+						<li><a href="#">настройки</a></li>
+						<li class="exit"><a href="#">выход</a></li>
+					</ul>
+				</div>
+				<div class="panel-top">
+					<ul class="breadcrumbs">
+						<li><a href="#">Продажи</a></li>
+					</ul>
+
+					<div class="panel-top-filtr">
+						<div class="panel-top-filtr__item _filtr-brand">
+							<!--filter-->
+							<div class="filter" data-filter>
+								<div class="filter__door" data-toggle="show">Выбор ресторана, сети, бренда</div>
+								<div class="filter__content">
+									<ul class="filter-list">
+										<li>
+											<div class="filter-list__door" data-toggle="show">Tasty project</div>
+											<ul class="filter-list__content">
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>Все рестораны сети</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. Б. полянка, 12а</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. б. тульская, 46</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. варварка, 35</span></label></li>
+											</ul>
+										</li>
+										<li>
+											<div class="filter-list__door" data-toggle="show">Tasty gastrobar</div>
+											<ul class="filter-list__content">
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>Все рестораны сети</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. Б. полянка, 12а</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. б. тульская, 46</span></label></li>
+											</ul>
+										</li>
+									</ul>
+									<div class="filter__content__button">
+										<a href="#" class="filter__content__button__item">Применить</a>
+										<a href="#" class="filter__content__button__item" data-toggle="close">закрыть</a>
+									</div>
+								</div>
+							</div>
+							<!--/filter-->
+						</div>
+						<div class="panel-top-filtr__item _filtr-date">
+							<!--filter-->
+							<div class="filter filter_green" data-filter>
+								<div class="filter__door" data-toggle="show">Выбор дат анализа</div>
+								<div class="filter__content">
+									<ul class="filter-list">
+										<li>
+											<div class="filter-list__door" data-toggle="show">Tasty project</div>
+											<ul class="filter-list__content">
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>Все рестораны сети</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. Б. полянка, 12а</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. б. тульская, 46</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. варварка, 35</span></label></li>
+											</ul>
+										</li>
+										<li>
+											<div class="filter-list__door" data-toggle="show">Tasty gastrobar</div>
+											<ul class="filter-list__content">
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>Все рестораны сети</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. Б. полянка, 12а</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. б. тульская, 46</span></label></li>
+											</ul>
+										</li>
+									</ul>
+									<div class="filter__content__button">
+										<a href="#" class="filter__content__button__item">Применить</a>
+										<a href="#" class="filter__content__button__item" data-toggle="close">закрыть</a>
+									</div>
+								</div>
+							</div>
+							<!--/filter-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/-->
+			<div class="page__content" data-scroll>
+				<div class="page__content__in">
+					<!---->
+					<ul class="menu-content">
+						<li class="active"><a href="#">Сравнительный анализ</a></li>
+						<li><a href="#">Анализ по дням недели</a></li>
+						<li><a href="#">анализ по новым / повторным продажам</a></li>
+					</ul>
+					<!--/-->
+					<!---->
+					<div class="content-header">
+						<h1>Сравнительный анализ продаж</h1>
+						<a href="#" class="button content-header__export">экспорт данных</a>
+						<div class="content-header-filtr">
+							<div class="content-header-filtr__item _name">Сравнить с...</div>
+							<div class="content-header-filtr__item _field">
+								<a href="#" class="content-header-filtr__clear">
+									<i class="fa fa-times" aria-hidden="true"></i>
+									сбросить фильтры
+								</a>
+								<!--filter-->
+								<div class="filter" data-filter>
+									<div class="filter__door" data-toggle="show">выбор периода для сравнения</div>
+									<div class="filter__content">
+										<ul class="filter-list">
+											<li>
+												<div class="filter-list__door" data-toggle="show">Tasty project</div>
+												<ul class="filter-list__content">
+													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>Все рестораны сети</span></label></li>
+													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. Б. полянка, 12а</span></label></li>
+													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. б. тульская, 46</span></label></li>
+													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. варварка, 35</span></label></li>
+												</ul>
+											</li>
+											<li>
+												<div class="filter-list__door" data-toggle="show">Tasty gastrobar</div>
+												<ul class="filter-list__content">
+													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>Все рестораны сети</span></label></li>
+													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. Б. полянка, 12а</span></label></li>
+													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. б. тульская, 46</span></label></li>
+												</ul>
+											</li>
+										</ul>
+										<div class="filter__content__button">
+											<a href="#" class="filter__content__button__item">Применить</a>
+											<a href="#" class="filter__content__button__item" data-toggle="close">закрыть</a>
+										</div>
+									</div>
+								</div>
+								<!--/filter-->
+							</div>
+						</div>
+					</div>
+					<!--/-->
+					<div class="statistics">
+						<div class="statistics__item"><b>670 000 рублей</b> всего продаж</div>
+						<div class="statistics__item"><b>1 799 рублей</b> визитов</div>
+						<div class="statistics__item"><b>1090,01</b> средний чек</div>
+					</div>
+					<div class="schedule">
+						<img src="./images/graph1.png" alt="" />
+					</div>
+					<!--table-->
+					<div class="table-frame">
+						<div class="table-frame__door" data-toggle='view-table'>сводная таблица</div>
+						<div class="table-frame__content">
+							<table class="table">
+								<tr>
+									<th>Дата</th>
+									<th>Постоянные клиенты</th>
+									<th>Новые гости</th>
+									<th>Постоянные клиенты</th>
+									<th>Новые гости</th>
+									<th>Постоянные клиенты</th>
+									<th>Новые гости</th>
+								</tr>
+								<tr>
+									<td>14 фев</td>
+									<td>45</td>
+									<td>30</td>
+									<td>103 900</td>
+									<td>120 745</td>
+									<td>1 930</td>
+									<td>3 050</td>
+								</tr>
+								<tr>
+									<td>14 фев</td>
+									<td>45</td>
+									<td>30</td>
+									<td>103 900</td>
+									<td>120 745</td>
+									<td>1 930</td>
+									<td>3 050</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<!--/table-->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
