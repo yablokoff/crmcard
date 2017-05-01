@@ -41,6 +41,8 @@ a:hover { text-decoration: underline; }
 	border-radius: 4px;
 	cursor: pointer;
 }
+.filter__door b { font-weight: 600; }
+
 .filter__door:after {
 	content: '';
 	position: absolute;
@@ -69,6 +71,8 @@ a:hover { text-decoration: underline; }
 	box-shadow: 0 0 8px 0 rgba(0,0,4,0.23);
 	box-sizing: border-box;
 }
+
+.filter__content._calendar { width: auto; }
 
 .filter__content__button {
 	font-size: 0;
@@ -176,11 +180,27 @@ a:hover { text-decoration: underline; }
 .filter.open .filter__content { display: block; }
 .filter.open .filter__door:after { border-bottom: 0 none; border-top: 4px solid #0069b4; }
 
+.filter.selected .filter__door { border-color: #c2d969; }
+.filter.selected .filter__door:after { border-bottom-color: #c2d969; }
 
-.filter_green .filter__door { border-color: #c2d969; }
-.filter_green .filter__door:after { border-bottom-color: #c2d969; }
+.filter-tab { padding-top: 11px; }
+.filter-tab__item {
+	display: inline-block;
+	vertical-align: top;
+	padding-bottom: 5px;
+	font-size: 8px;
+	line-height: 10px;
+	color: #4a4545;
+	text-transform: uppercase;
+	margin: 0 6px 0 9px;
+	border-bottom: 3px solid transparent;
+}
+.filter-tab__item:hover { text-decoration: none; }
 
-
+.filter-tab__item.active {
+	font-weight: 700;
+	border-bottom-color: #c2d969;
+}
 
 
 .page__logo {
@@ -269,6 +289,8 @@ a:hover { text-decoration: underline; }
 
 .panel-top-filtr__item._filtr-brand { width: 222px; }
 .panel-top-filtr__item._filtr-date { width: 148px; }
+
+.panel-top-filtr__item._filtr-date .filter__content { left: auto; right: 0; }
 
 .breadcrumbs  { font-size: 0; }
 .breadcrumbs li {
