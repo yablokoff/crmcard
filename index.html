@@ -11,14 +11,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
 	<link rel="stylesheet" type="text/css" href="./css/jquery.jscrollpane.css">
+	<link rel="stylesheet" type="text/css" href="./css/datepicker.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	<link rel="stylesheet" type="text/css" href="./css/media.css" />
 
 	<script src="./js/jquery-2-1-0.min.js"></script>
 	<script src="./js/jquery.jscrollpane.min.js"></script>
 	<script src="./js/jquery.mousewheel.js"></script>
+	<script src="./js/datepicker.min.js"></script>
+	<script src="./js/datepicker.en.js"></script>
 	<script src="./js/main.js"></script>
-
 </head>
 <body>
 	<div class="page">
@@ -59,8 +61,8 @@
 					<div class="panel-top-filtr">
 						<div class="panel-top-filtr__item _filtr-brand">
 							<!--filter-->
-							<div class="filter" data-filter>
-								<div class="filter__door" data-toggle="show">Выбор ресторана, сети, бренда</div>
+							<div class="filter selected" data-filter>
+								<div class="filter__door" data-toggle="show"><b>tasty project,</b> б. полянка, 12а</div> <!-- default:  Выбор ресторана, сети, бренда-->
 								<div class="filter__content">
 									<ul class="filter-list">
 										<li>
@@ -91,28 +93,14 @@
 						</div>
 						<div class="panel-top-filtr__item _filtr-date">
 							<!--filter-->
-							<div class="filter filter_green" data-filter>
+							<div class="filter" data-filter>
 								<div class="filter__door" data-toggle="show">Выбор дат анализа</div>
-								<div class="filter__content">
-									<ul class="filter-list">
-										<li>
-											<div class="filter-list__door" data-toggle="show">Tasty project</div>
-											<ul class="filter-list__content">
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>Все рестораны сети</span></label></li>
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. Б. полянка, 12а</span></label></li>
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. б. тульская, 46</span></label></li>
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. варварка, 35</span></label></li>
-											</ul>
-										</li>
-										<li>
-											<div class="filter-list__door" data-toggle="show">Tasty gastrobar</div>
-											<ul class="filter-list__content">
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>Все рестораны сети</span></label></li>
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. Б. полянка, 12а</span></label></li>
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. б. тульская, 46</span></label></li>
-											</ul>
-										</li>
-									</ul>
+								<div class="filter__content _calendar">
+									<div class="filter-tab">
+										<a href="#" class="filter-tab__item active">Конкретные даты</a>
+										<a href="#" class="filter-tab__item">Последние 4 недели</a>
+									</div>
+									<div data-calendar-period></div>
 									<div class="filter__content__button">
 										<a href="#" class="filter__content__button__item">Применить</a>
 										<a href="#" class="filter__content__button__item" data-toggle="close">закрыть</a>
