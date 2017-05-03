@@ -68,18 +68,18 @@
 										<li>
 											<div class="filter-list__door" data-toggle="show">Tasty project</div>
 											<ul class="filter-list__content">
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>Все рестораны сети</span></label></li>
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. Б. полянка, 12а</span></label></li>
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. б. тульская, 46</span></label></li>
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. варварка, 35</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" data-checkbox-filter /><span>Все рестораны сети</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" data-checkbox-filter /><span>ул. Б. полянка, 12а</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" data-checkbox-filter /><span>ул. б. тульская, 46</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" data-checkbox-filter /><span>ул. варварка, 35</span></label></li>
 											</ul>
 										</li>
 										<li>
 											<div class="filter-list__door" data-toggle="show">Tasty gastrobar</div>
 											<ul class="filter-list__content">
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>Все рестораны сети</span></label></li>
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. Б. полянка, 12а</span></label></li>
-												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. б. тульская, 46</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" data-checkbox-filter /><span>Все рестораны сети</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" data-checkbox-filter /><span>ул. Б. полянка, 12а</span></label></li>
+												<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" data-checkbox-filter /><span>ул. б. тульская, 46</span></label></li>
 											</ul>
 										</li>
 									</ul>
@@ -136,30 +136,11 @@
 								<!--filter-->
 								<div class="filter" data-filter>
 									<div class="filter__door" data-toggle="show">выбор периода для сравнения</div>
-									<div class="filter__content">
-										<ul class="filter-list">
-											<li>
-												<div class="filter-list__door" data-toggle="show">Tasty project</div>
-												<ul class="filter-list__content">
-													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>Все рестораны сети</span></label></li>
-													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. Б. полянка, 12а</span></label></li>
-													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. б. тульская, 46</span></label></li>
-													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. варварка, 35</span></label></li>
-												</ul>
-											</li>
-											<li>
-												<div class="filter-list__door" data-toggle="show">Tasty gastrobar</div>
-												<ul class="filter-list__content">
-													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>Все рестораны сети</span></label></li>
-													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. Б. полянка, 12а</span></label></li>
-													<li><label class="filter-list__checkbox"><input type="checkbox" name="" value="" /><span>ул. б. тульская, 46</span></label></li>
-												</ul>
-											</li>
+									<div class="filter__content _links">
+										<ul class="filter-list-links">
+											<li class="filter-list-links__item"><a href="#">прошлый год</a></li>
+											<li class="filter-list-links__item"><a href="#">предыдущий период</a></li>
 										</ul>
-										<div class="filter__content__button">
-											<a href="#" class="filter__content__button__item">Применить</a>
-											<a href="#" class="filter__content__button__item" data-toggle="close">закрыть</a>
-										</div>
 									</div>
 								</div>
 								<!--/filter-->
@@ -216,6 +197,5 @@
 			</div>
 		</div>
 	</div>
-
 </body>
 </html>
