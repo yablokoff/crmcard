@@ -4,7 +4,8 @@ $( function() {
 
         $contentBox = $('[data-scroll]'),
 
-        cssClassOpen = "open"
+        cssClassOpen = "open",
+        cssClassActive = "active"
     ;
 
     function setHeightContent() {
@@ -35,6 +36,16 @@ $( function() {
         $filters.on ("click", "[data-toggle='close']", (function(){
 			$(this).closest('[data-filter]').removeClass(cssClassOpen);
 		}));
+
+    })();
+
+    //filter checkbox
+    (function(){
+        var $filters = $('[data-filter]');
+
+        $filters.on ("change", "[data-checkbox-filter]", (function(){
+            $(this).parent().parent().toggleClass(cssClassActive);
+        }));
 
     })();
 
