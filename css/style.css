@@ -548,3 +548,102 @@ a:hover { text-decoration: underline; }
 	font-size: 17px;
 	color: #0069b4;
 }
+
+.popup {
+	display: none;
+	position: absolute;
+	top: 100px;
+	left: 30%;
+	width: 45%;
+	max-width: 580px;
+	background: #f3f3f3;
+	padding-bottom: 7px;
+	border-radius: 8px;
+	box-shadow: 0 0 8px 0 rgba(0,0,4,0.23);
+	box-sizing: border-box;
+}
+.popup.open { display: block; }
+
+.popup__title {
+	padding: 19px 20px 14px 20px;
+	font-size: 19px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #4a4545;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #bababa;
+}
+
+.table2 {
+	width: 100%;
+	table-layout: fixed;
+}
+.table2 th {
+	vertical-align: top;
+	font-size: 12px;
+	color: #4a4545;
+	text-align: left;
+	font-weight: 600;
+	padding: 0 5px 15px 5px;
+	box-sizing: border-box;
+}
+
+.table2 td {
+	width: 1%;
+	vertical-align: middle;
+	font-size: 11px;
+	color: #4a4545;
+	padding: 4px 5px 5px 5px;
+	box-sizing: border-box;
+}
+
+.table2 tr:nth-child(even) td { background: #eeeeee; }
+
+.table2 th:first-child,
+.table2 td:first-child { padding-left: 20px; }
+.table2 th:last-child,
+.table2 td:last-child { padding-right: 20px; }
+
+.table2__text-center { text-align: center !important; }
+.table2__w30 { width: 30%; }
+.table2__w20 { width: 20%; }
+.table2__w22 { width: 22%; }
+
+
+.table-services th { white-space: nowrap; }
+.table-services__plus {
+	font-weight: 700;
+	color: #89a717;
+}
+.table-services__minus {
+	font-weight: 700;
+	color: #c20f0f;
+}
+
+.table-services__menu {
+	display: inline-block;
+	position: relative;
+	padding-left: 20px;
+}
+
+.table-services__menu:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 16px;
+	height: 9px;
+	margin-top: -4px;
+	border-radius: 33%;
+}
+
+.table-services__menu_color1:before { background: #c1da62; }
+.table-services__menu_color2:before { background: #e9a05a; }
+.table-services__menu_color3:before { background: #808ed9; }
+
+.table-services__total td {
+	vertical-align: top;
+	font-weight: 600;
+	border-top: 1px solid #0069b4;
+	background: #f3f3f3;
+ }

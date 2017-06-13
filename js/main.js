@@ -89,4 +89,14 @@ $( function() {
 
     })();
 
+    //view popup table-services
+    (function(){
+        $body.on ("click", "[data-popup]", (function(){
+            var id = $(this).attr("data-popup");
+
+            $body.find("#" + id).addClass(cssClassOpen);
+        }));
+
+    })();
+
 });
